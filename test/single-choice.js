@@ -12,3 +12,4 @@ SingleChoice.prototype.mark = function(trueAnswer) {
     return keyItem[0].point;
   }
 };
+ 
