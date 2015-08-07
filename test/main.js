@@ -18,23 +18,23 @@ var result = '';
     });
   }
 
-// //之后将它改为一个函数，让每个函数调用
-// var radio = document.getElementsByName('singleChoice1');
-// function getResult() {
-//   var result = [].filter.call(radio, function(elem) {
-//     return elem.checked;
-//   }).map(function(elem) {
-//     return elem.value;
-//   });
-//   return result.join("-");
-//
-//
-// }
-// [].forEach.call(radio, function(element) {
-//   element.addEventListener('click', function() {
-//     document.getElementById('Q1-1').value = getResult();
-//   });
-// });
+//之后将它改为一个函数，让每个函数调用
+var radio = document.getElementsByName('singleChoice1');
+function getResult() {
+  var result = [].filter.call(radio, function(elem) {
+    return elem.checked;
+  }).map(function(elem) {
+    return elem.value;
+  });
+  return result.join("-");
+
+
+}
+[].forEach.call(radio, function(element) {
+  element.addEventListener('click', function() {
+    document.getElementById('Q1-1').value = getResult();
+  });
+});
 
 
 

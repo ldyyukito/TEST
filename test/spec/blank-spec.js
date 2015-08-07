@@ -11,7 +11,7 @@ describe("blank", function() {
     }, {
       name: 'blank1',
       value: ['统一建模语言'],
-      point: 2
+      point: 1
     }, {
       name: 'blank2',
       value: ['多态性', '封装性', '继承性'],
@@ -34,6 +34,7 @@ describe("blank", function() {
       var result = blankScore.grade(trueAnswer);
       expect(result).toEqual(2);
     });
+
 
   });
 });

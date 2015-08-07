@@ -1,4 +1,4 @@
-describe("scanner", function() {
+describe("Multiple", function() {
   describe("", function() {
     var trueAnswer = [{
       name: 'singleChoice1',
@@ -18,10 +18,22 @@ describe("scanner", function() {
       point: 1
     }];
 
-    it("mark", function() {
+    it(" get multiple score", function() {
       var checkboxScore = new Multiple('multiple1', ['A','B','D']);
       var result = checkboxScore.judgeMark(trueAnswer);
       expect(result).toEqual(0);
+    });
+
+    it(" get multiple score", function() {
+      var checkboxScore = new Multiple('multiple1', ['A','B','C']);
+      var result = checkboxScore.judgeMark(trueAnswer);
+      expect(result).toEqual(5);
+    });
+
+    it(" get multiple score", function() {
+      var checkboxScore = new Multiple('multiple1', ['A','B']);
+      var result = checkboxScore.judgeMark(trueAnswer);
+      expect(result).toEqual(2);
     });
 
   });
