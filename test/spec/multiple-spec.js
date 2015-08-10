@@ -20,21 +20,22 @@ describe("Multiple", function() {
 
     it(" get multiple score", function() {
       var checkboxScore = new Multiple('multiple1', ['A','B','D']);
-      var result = checkboxScore.judgeMark(trueAnswer);
+      var result = checkboxScore.mark(trueAnswer);
       expect(result).toEqual(0);
     });
 
     it(" get multiple score", function() {
       var checkboxScore = new Multiple('multiple1', ['A','B','C']);
-      var result = checkboxScore.judgeMark(trueAnswer);
+      var result = checkboxScore.mark(trueAnswer);
       expect(result).toEqual(5);
     });
 
     it(" get multiple score", function() {
       var checkboxScore = new Multiple('multiple1', ['A','B']);
-      var result = checkboxScore.judgeMark(trueAnswer);
+      var result = checkboxScore.mark(trueAnswer);
       expect(result).toEqual(2);
     });
+  
 
   });
 });

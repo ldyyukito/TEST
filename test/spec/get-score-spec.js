@@ -1,4 +1,4 @@
-describe("", function() {
+describe("GetScore", function() {
   describe("", function() {
 
       var answer = [{

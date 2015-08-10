@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Uml_text</title>
+</head>
+
+<body>
+  <div>
+  西安软件服务外包学院
+  <hr>
+  </div>
+  <div class="header" style=" text-align:center;">
+    <H1> <i> 西安软件服务外包学院统一建模语言理论测试</i></H1>
+  </div>
+
+  <div>
+    考试科目 <u>统 一 建 模 语 言 UML</u> 时间: <u>100 分钟 </u>
+
+    得分：
+    <input type="text" name="info" id="SCORE"  style="border:none;border-bottom:1px solid #000;">
+    <br>
+    班级：
+    <input type="text" name="info" id="CLASS"  style="border:none;border-bottom:1px solid #000;">
+    学号：
+    <input type="text" name="info" autocomplete="off" id="SNO" style="border:none;border-bottom:1px solid #000;" >
+    姓名：
+    <input type="text" name="info" id="NAME" style="border:none;border-bottom:1px solid #000;">
+    <input type="button"  id ='Submit' value="提交">
+  </div>
+
+
+  <div class="test" >
+    <form  id='test-container'>
+    <H4>一、填空题</H4>
+    1. UML 的中文全称是:
+    <input type="text" name="blank1"   style="border:none;border-bottom:1px solid #000;">。
+    <br> 2. 对象最突出的特征是:
+    <input type="text" name="blank2"  style="border:none;border-bottom:1px solid #000;">、
+    <input type="text" name="blank2"    style="border:none;border-bottom:1px solid #000;">
+    <input type="text" name="blank2"    style="border:none;border-bottom:1px solid #000;">。
+    <H4>二、选择题</H4>
+    1.UML 与软件工程的关系是:[<input type="text" id="Q2-1" style ="border : none">]
+    <br>
+    <p>
+      <input name="singleChoice1" type="radio" value="A">(A)UML 就是软件工程</p>
+    <p>
+      <input name="singleChoice1" type="radio"  value="B">(B)UML 参与到软件工程中软件开发</p>
+    <p>
+      <input name="singleChoice1" type="radio"  value="C">(C)UML 与软件工程无关</p>
+    <p>
+      <input name="singleChoice1" type="radio" value="D">(D)UML 是软件工程的一部分</p>
+
+    2.Java 语言支持: [<input type="text"  id="Q2-2" style ="border : none"> ]
+    <br>
+    <p>
+      <input name="singleChoice2" type="radio"   value="A">(A)单继承</p>
+    <p>
+      <input name="singleChoice2" type="radio"  value="B">(B)多继承</p>
+    <p>
+      <input name="singleChoice2" type="radio" value="C">(C)单继承和多继承都支持</p>
+    <p>
+      <input name="singleChoice2" type="radio"  value="D">(D)单继承和多继承都不支持</p>
+    <br>
+
+    <h4>三、多选题 </h4>
+     1. 用例的粒度分为以下哪三种。[<input type="text"  style ="border : none"  id="Q3-1">]
+     <br>
+     <p>
+       <input name="multiple1" type="checkbox"  value="A">(A)概述级</p>
+     <p>
+       <input name="multiple1" type="checkbox"  value="B">(B)需求级</p>
+     <p>
+       <input name="multiple1" type="checkbox"  value="C">(C)用户目标级</p>
+     <p>
+       <input name="multiple1" type="checkbox"  value="D">(D)子功能级</p>
+    <br>
+     2. 类图由以下哪三部分组成。[<input type="text" id="Q3-2" style ="border : none">]
+     <br>
+     <p>
+       <input name="multiple2" type="checkbox"  value="A">(A)名称(Name)</p>
+     <p>
+       <input name="multiple2" type="checkbox" value="B">(B)需求级</p>
+     <p>
+       <input name="multiple2" type="checkbox"  value="C">(C)操作(Operation)</p>
+     <p>
+       <input name="multiple2" type="checkbox"  value="D">(D)方法(Function)</p>
+    <br>
+    <h4>四 、判断题</h4>
+    1. 用例图只是用于和客户交流和沟通的,用于确定需求。[<input type="text" id="Q4-1" style ="border : none">]
+    <br>
+    <p>
+      <input name="judge1" type="radio"   value="是">是</p>
+    <p>
+      <input name="judge1" type="radio"  value="否">否</p>
+    <br> 2. 在状态图中,终止状态在一个状态图中允许有任意多个。[<input type="text" id="Q4-2" style ="border : none">]
+    <br>
+    <p>
+      <input name="judge2" type="radio"   value="是">是</p>
+    <p>
+      <input name="judge2" type="radio"  value="否">否</p>
+
+    <h4>五 、简 答 题( 每 题 4 分 , 共 20 分 ) </h4>
+    <br> 1. 简述什么是模型以及模型的表现形式?
+    <br>
+    <input type="text"  id="state">
+
+
+  </form>
+  </div>
+
+  <script type="text/javascript" src="form-serilizer.js"></script>
+  <script type="text/javascript" src="single-choice.js"></script>
+  <script type="text/javascript" src="multiple.js"></script>
+  <script type="text/javascript" src="blank.js"></script>
+  <script type="text/javascript" src="loadTrueAnswer.js"></script>
+  <script type="text/javascript" src="get-score.js"></script>
+
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

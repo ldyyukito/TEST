@@ -20,18 +20,18 @@ describe("blank", function() {
 
     it("get blank score", function() {
       var blankScore = new Blank('blank2', ['多态性', '统一性', '继承性']);
-      var result = blankScore.grade(trueAnswer);
+      var result = blankScore.mark(trueAnswer);
       expect(result).toEqual(2);
     });
 
     it("get blank score", function() {
       var blankScore = new Blank('blank2', ['多态性', '封装性', '继承性']);
-      var result = blankScore.grade(trueAnswer);
+      var result = blankScore.mark(trueAnswer);
       expect(result).toEqual(3);
     });
     it("get blank score", function() {
       var blankScore = new Blank('blank2', ['多态性', '多态性', '继承性']);
-      var result = blankScore.grade(trueAnswer);
+      var result = blankScore.mark(trueAnswer);
       expect(result).toEqual(2);
     });
 
